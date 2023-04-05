@@ -1,0 +1,33 @@
+{
+  "name": "NikeshPadakanti-SDK",
+  "version": "1.0.0",
+  "description": "SDK",
+  "main": "dist/index.js",
+  "module": "dist/index.m.js",
+  "unpkg": "dist/index.umd.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "rm -rf dist && microbundle --tsconfig tsconfig.json --no-sourcemap"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nikeshp/NikeshPadakanti-SDK.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "files": [
+    "dist"
+  ],
+  "bugs": {
+    "url": "https://github.com/nikeshp/NikeshPadakanti-SDK/issues"
+  },
+  "homepage": "https://github.com/nikeshp/NikeshPadakanti-SDK#readme",
+  "devDependencies": {
+    "microbundle": "^0.15.1",
+    "typescript": "^5.0.3"
+  },
+  "dependencies": {
+    "isomorphic-unfetch": "^4.0.2"
+  }
+}
