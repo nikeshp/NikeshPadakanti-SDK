@@ -1,21 +1,26 @@
 {
-  "name": "NikeshPadakanti-SDK",
-  "version": "1.0.0",
+  "name": "@nikeshp/nikeshpadakanti-sdk",
+  "version": "1.1.0",
   "description": "SDK",
   "main": "dist/index.js",
   "module": "dist/index.m.js",
   "unpkg": "dist/index.umd.js",
   "types": "dist/index.d.ts",
+  "exports": {
+    "require": "./dist/index.js",
+    "default": "./dist/index.modern.js"
+  },
   "scripts": {
-    "build": "rm -rf dist && microbundle --tsconfig tsconfig.json --no-sourcemap"
+    "build": "rm -rf dist && microbundle --tsconfig tsconfig.json --no-sourcemap",
+    "dev": "microbundle --watch --tsconfig tsconfig.json --no-sourcemap"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/nikeshp/NikeshPadakanti-SDK.git"
   },
   "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "author": "Nikesh Padakanti",
+  "license": "MIT",
   "files": [
     "dist"
   ],
